@@ -1,0 +1,49 @@
+.form{
+    margin-left : 30%;
+    width: 60%;
+    padding: 10px;
+}
+
+.inputField{
+    border : 1px solid black;
+    width: 550px;
+    padding: 10px;
+    border-radius: 250px;
+    margin-left: 15px;
+    padding-left: 25px;
+}
+
+.invisible{
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    width : 90%;
+}
+
+.input{
+    border : 1px solid none;
+    margin-left : -85px;
+    width: 81%;
+    padding : 10px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+}
+
+.input > button{
+    margin-left: 5px;
+    /* display: none; */
+    height: 40px;
+    margin-left: 15px;
+    margin-top : 20px;
+    color : white;
+    background-color: #80ab85;
+    border : none;
+    border-radius: 5px;
+    font-size: 15px;
+    width : 90px;
+}
+
+
+
