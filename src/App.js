@@ -9,9 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Form/>
-      <PostList
-        title = "Hello everyone"
-          description = "I dont know what i am doing"/>
+        <PostList/>
       </header>
     </div>
   );
