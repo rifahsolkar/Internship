@@ -23,7 +23,7 @@ class Form extends Component{
         console.log("Posted successfully")
         // e.preventDefault()
         console.log(this.state)
-        axios.post("http://localhost:9000/posts",this.state)
+        axios.post("https://rsbook.herokuapp.com/posts",this.state)
         .then((response)=>{
             console.log(response)
         })

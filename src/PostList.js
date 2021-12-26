@@ -10,7 +10,7 @@ function PostList(props) {
 
     useEffect(()=>{
         console.log("Rendering component")
-        axios.get('http://localhost:9000/posts')
+        axios.get('https://rsbook.herokuapp.com/posts')
         .then((response)=>{
             setData(response.data)
         })
