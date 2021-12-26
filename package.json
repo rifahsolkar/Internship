@@ -42,6 +42,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+    
+  },
+  
   "dependencies": {
     "body-parse": "^0.1.0",
     "body-parser": "^1.19.1",
@@ -51,9 +56,8 @@
     "mongoose": "^6.1.2"
   },
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  
+  
   "editor.autoClosingBrackets": "always",
   "[javascript]": {
     "editor.autoClosingBrackets": "always"
