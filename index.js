@@ -11,7 +11,8 @@ const Post = require('./src/models/post');
 const post = require('./src/models/post');
 
 // const db = mongoose.connect('mongodb://localhost:27017/first-node-api')
-const db = mongoose.connect('mongodb+srv://rifahsolkar:rifah123rifah@cluster0.rgr3g.mongodb.net/test')
+const db = mongoose.connect('mongodb+srv://rifahsolkar:rifah123rifah@cluster0.rgr3g.mongodb.net/first-node-api?retryWrites=true&w=majority',
+{useNewUrlParser : true})
 
 app.use(cors())
 app.use(bodyParser.json())
@@ -21,13 +22,13 @@ app.get('/',(req,res)=>{
     res.send({ping : "pong"})
 })
 
-app.post('/posts',(req,res)=>{
+app.post('/posts',async (req,res)=>{
 
     const title = req.body.title
     const author = req.body.author
     const content = req.body.content
 
-    var post = new Post()
+    var post =  await new Post()
     post.title = title
     post.author = author
     post.content = content
