@@ -11,8 +11,7 @@ const Post = require('./src/models/post');
 const post = require('./src/models/post');
 
 // const db = mongoose.connect('mongodb://localhost:27017/first-node-api')
-const db = mongoose.connect('mongodb+srv://rifahsolkar:rifah123rifah@cluster0.rgr3g.mongodb.net/first-node-api?retryWrites=true&w=majority',
-{useNewUrlParser : true})
+const db = mongoose.connect('mongodb+srv://rifahsolkar:rifah123rifah@cluster0.rgr3g.mongodb.net/first-node-api?retryWrites=true&w=majority')
 
 app.use(cors())
 app.use(bodyParser.json())
